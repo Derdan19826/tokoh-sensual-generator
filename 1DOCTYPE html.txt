@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Generator Tokoh Sensual</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #f8f8f8;
+      font-family: 'Georgia', serif;
+      padding: 40px;
+      text-align: center;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 18px;
+      background: crimson;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    .prompt-box {
+      background: #222;
+      padding: 24px;
+      border-radius: 16px;
+      width: 80%;
+      margin: auto;
+      text-align: left;
+      box-shadow: 0 0 10px #000;
+    }
+    h1 {
+      font-size: 32px;
+      color: crimson;
+    }
+    .field {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔥 Generator Tokoh Sensual 🔥</h1>
+  <button onclick="generatePrompt()">Generate</button>
+
+  <div class="prompt-box" id="result">
+    <div class="field">Klik tombol di atas untuk mulai...</div>
+  </div>
+
+  <script>
+    const names = ["Kaela", "Seth", "Ardyn", "Lyra", "Noct", "Vasha", "Riven", "Ezra"];
+    const appearances = [
+      "tatapan tajam yang bisa melucuti ego",
+      "kulit keemasan dengan luka-luka lama yang belum hilang",
+      "tubuh tinggi dengan aroma primal seperti hutan basah",
+      "senyum setengah mati yang mengundang dan mengancam sekaligus"
+    ];
+    const energies = ["dominant", "submissive tapi licik", "feral dan unpredictable", "halus seperti bisikan maut", "dingin tapi posesif"];
+    const weaknesses = [
+      "suka disentuh di leher secara tidak sadar",
+      "takut kedekatan emosional tapi haus validasi",
+      "trauma masa kecil yang muncul saat disentuh lembut",
+      "mudah runtuh saat dibisiki pujian"
+    ];
+    const erotics = [
+      "selalu menggoda dengan gestur, bukan kata",
+      "menikmati permainan kuasa dan penyerahan",
+      "suka bermain rasa bersalah dan kenikmatan sekaligus",
+      "menjadikan rasa sakit sebagai bahasa cinta"
+    ];
+    const kinks = [
+      "obsesi terhadap kontrol mutlak",
+      "fantasi kekuasaan di ruang tertutup",
+      "punya ritual membisiki tubuh sebelum menyentuh",
+      "selalu menatap cermin saat beraksi"
+    ];
+    const catchphrases = [
+      '"Aku tak akan menyentuhmu... sampai kamu memohon."',
+      '"Kenapa kamu gemetar? Bukannya ini yang kamu mau?"',
+      '"Aku bukan tempat amanmu. Aku tempat kamu lepas kendali."',
+      '"Jangan berbohong. Tubuhmu lebih jujur dari mulutmu."'
+    ];
+
+    function pick(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    function generatePrompt() {
+      const output = `
+        <div class="field">🩸 <strong>Nama:</strong> ${pick(names)}</div>
+        <div class="field">👁️ <strong>Penampilan:</strong> ${pick(appearances)}</div>
+        <div class="field">🔥 <strong>Energi:</strong> ${pick(energies)}</div>
+        <div class="field">💔 <strong>Kelemahan:</strong> ${pick(weaknesses)}</div>
+        <div class="field">💋 <strong>Gaya Erotis:</strong> ${pick(erotics)}</div>
+        <div class="field">🕯️ <strong>Penyimpangan:</strong> ${pick(kinks)}</div>
+        <div class="field">🗨️ <strong>Kalimat Andalan:</strong> ${pick(catchphrases)}</div>
+      `;
+      document.getElementById("result").innerHTML = output;
+    }
+  </script>
+</body>
+</html>
