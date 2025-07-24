@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Generator Tokoh Sensual</title>
+  <style>
+    body {
+      background-color: #121015;
+      color: #e8d7c1;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      justify-content: center;
+      background-image: radial-gradient(circle at top left, #2a1f2d 0%, #121015 80%);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #d7b4a0;
+      margin-bottom: 0.5em;
+      text-shadow: 0 0 10px rgba(255, 200, 200, 0.2);
+    }
+
+    #output {
+      margin-top: 1em;
+      font-size: 1.2em;
+      padding: 1em;
+      border: 1px solid #444;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      max-width: 600px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    button {
+      background-color: #8b1e3f;
+      color: #fff;
+      border: none;
+      padding: 0.75em 1.5em;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 0.5em;
+      transition: background 0.3s ease, transform 0.2s;
+      font-family: 'Georgia', serif;
+    }
+
+    button:hover {
+      background-color: #a62850;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 2em;
+      font-size: 0.9em;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <h1>Generator Tokoh Sensual</h1>
+  <div id="output">Klik untuk menghasilkan karakter sensual...</div>
+  <div>
+    <button onclick="generate()">🎲 Generate</button>
+    <button onclick="copyText()">📋 Salin Prompt</button>
+  </div>
+  <footer>&copy; Derdan19826 | Ruang Imaji & Nafas</footer>
+
+  <script>
+    const prompts = [
+      "Seorang wanita muda dengan tatapan seolah menyimpan seluruh rahasia malam Paris.",
+      "Pria bertubuh jangkung dengan suara rendah seperti pelan malam turun.",
+      "Perempuan berselendang beludru, menyimpan ciuman yang bisa membakar batas.",
+      "Seniman berambut acak dengan tangan penuh warna dan luka cinta.",
+      "Penyair mabuk anggur, menulis puisi dari kulit kekasihnya.",
+      "Aktris panggung yang menghilang di balik bayangan tirai merah..."
+    ];
+
+    function generate() {
+      const prompt = prompts[Math.floor(Math.random() * prompts.length)];
+      document.getElementById("output").innerText = prompt;
+    }
+
+    function copyText() {
+      const text = document.getElementById("output").innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Prompt disalin ke clipboard!");
+      });
+    }
+const prompts = [
+  "Seorang wanita muda dengan tatapan seolah menyimpan seluruh rahasia malam Paris.",
+  "Pria bertubuh jangkung dengan suara rendah seperti pelan malam turun.",
+  "Perempuan berselendang beludru, menyimpan ciuman yang bisa membakar batas.",
+  "Seniman berambut acak dengan tangan penuh warna dan luka cinta.",
+  "Penyair mabuk anggur, menulis puisi dari kulit kekasihnya.",
+  "Aktris panggung yang menghilang di balik bayangan tirai merah...",
+  "Pria asing dengan tangan penuh luka dan mata seperti surat cinta yang tak pernah dikirim.",
+  "Penari bayangan yang gerakannya seperti doa sensual di antara asap rokok dan gin.",
+  "Perempuan pendiam yang hanya membuka mulut untuk berbisik nama mantan kekasihnya.",
+  "Pelaut tua yang menyimpan foto tubuh di dompet kulit lusuhnya.",
+  "Seniman jalanan yang melukis bibir setiap perempuan yang menatapnya terlalu lama.",
+  "Lelaki berpakaian abu-abu dengan senyum miring, membawa aroma tembakau dan dendam manis.",
+  "Gadis pemetik bunga liar yang menyembunyikan surat patah hati di sela dadanya.",
+  "Perempuan berkerudung hitam yang mengirimkan parfum lewat tatapan.",
+  "Penulis anonim yang selalu menulis kisah erotis tanpa pernah menyebut nama tokohnya.",
+  "Sastrawan tua yang menggigit ujung pena seperti menggoda bibir kekasih lamanya.",
+  "Aktor film bisu yang hanya bisa mengekspresikan cinta lewat gerak tangan di balik jendela hujan.",
+  "Gelandangan tampan yang selalu berbau kopi dan peluh cinta pertama.",
+  "Gadis toko buku yang hanya tertawa saat membaca puisi tentang tubuh.",
+  "Wanita yang tidak pernah tertidur sebelum mendengar namanya dibisikkan pelan."
+];
+
+  </script>
+</body>
+</html>
